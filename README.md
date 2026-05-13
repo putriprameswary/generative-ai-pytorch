@@ -6,7 +6,7 @@ Repository ini berisi implementasi beberapa model **Generative AI** untuk dua do
 
 Pada domain Vision, eksperimen dilakukan menggunakan **Variational Autoencoder (VAE)** dan **Autoencoder (AE)** untuk merekonstruksi sekaligus menghasilkan citra baru dari dataset Fashion-MNIST. Pada domain Text, model **LSTM** dan **GRU** digunakan untuk membangun generator teks karakter-level berbasis cerita pendek berbahasa Indonesia.
 
-Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah *Topik Kecerdasan Buatan* untuk memahami bagaimana model generatif mempelajari distribusi data dan menggunakannya untuk menciptakan output baru yang menyerupai data asli.
+Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah *Pembelajaran Mesin Lanjut* untuk memahami bagaimana model generatif mempelajari distribusi data dan menggunakannya untuk menciptakan output baru yang menyerupai data asli.
 
 ---
 
