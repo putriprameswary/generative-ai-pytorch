@@ -66,29 +66,26 @@ Input Character → Embedding → RNN Layers → Linear → Prediksi Karakter Be
 
 ### Variational Autoencoder (VAE)
 
-\[
-z = \mu + \sigma \cdot \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)
-\]
+```text
+z = μ + σ · ε,   ε ~ N(0, I)
 
-\[
-\mathcal{L} = \mathcal{L}_{recon} + \mathcal{L}_{KL}
-\]
+L = L_recon + L_KL
+L_KL = -0.5 × Σ(1 + log(σ²) - μ² - σ²)
+```
 
 ### Autoencoder
 
-\[
-\hat{x} = g_{\phi}(f_{\theta}(x))
-\]
+```text
+z  = fθ(x)
+x̂ = gφ(z)
+L  = ||x - x̂||²
+```
 
 ### Text Generation
 
-\[
-p(x_1, x_2, ..., x_T)
-=
-\prod_{t=1}^{T}
-p(x_t \mid x_1, ..., x_{t-1})
-\]
-
+```text
+p(x1, x2, ..., xT) = ∏ p(xt | x1, ..., x(t-1))
+```
 ---
 
 ## ⚙️ Konfigurasi Training
